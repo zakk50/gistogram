@@ -1,2 +1,4 @@
 /node_modules
+/release-builds
+/myApp-win32-x64
 package-lock.json

@@ -1,13 +1,13 @@
 //main.js
 //Основная конфигуация для старта приложения
 const electron = require('electron');
-
 const app = electron.app;
-
 const BrowserWindow = electron.BrowserWindow;
 
 let mainWindow;
 
+const path = require ('path'); 
+const url = require ('url'); 
 
 function createWindow () {
   // Create the browser window.
@@ -15,14 +15,12 @@ function createWindow () {
     width: 1000,
     height: 625,
     //fullscreen:true,
-    // frame:false,
+    // frame:true,
     // resizable:false
     }); //основная конфигуация
 
+  mainWindow.loadURL('http://localhost:3000'); //загрузка html файла  'file://' + __dirname + '/index.html'
 
-  mainWindow.loadURL('file://' + __dirname + '/index.html'); //загрузка html файла
-
- 
   mainWindow.on('closed', function() {
     mainWindow = null;
   });

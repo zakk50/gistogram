@@ -4,12 +4,21 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "electron": "electron electron-starter.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "build-electron": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=x64 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Electron Tutorial App'",
+    "build-2-electron": "electron-packager . myApp --platform=win32 --arch=x64 --version-string.ProductName='Electron Tutorial App'",
+    "eject": "react-scripts eject"
   },
   "author": "Golikov Vladimir",
   "license": "MIT",
   "devDependencies": {
     "electron": "^3.0.0"
+  },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   }
 }
