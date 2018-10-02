@@ -1,4 +1,6 @@
+/build
 /node_modules
-/release-builds
-/myApp-win32-x64
+
+#log
+npm-debug.log
 package-lock.json
