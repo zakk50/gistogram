@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import Area from './Area';
+import Navbar from './navbar/Navbar';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h2>Gistogram</h2>
-        </div>
-        <p className="App-intro">
-          Hello Electron and Gistogram!!!
-        </p>
+        <Navbar />
+        <Area />
       </div>
     );
   }
