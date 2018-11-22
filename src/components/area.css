@@ -4,16 +4,18 @@
 .content-sidebar{
   position: absolute;
   width: 389px;
+  height: 760px;
   left: 60px;
   top: 0px;
   border-radius: 7px;
-  background: red;
+  background: linear-gradient( to bottom , #334768, #415372);
 }
 .content-histogram{
   position: absolute;
   width: 1470px;
+  height: 760px;
   right: 0px;
   top: 0px;
   border-radius: 7px;
-  background: yellowgreen;
+  background: #DFDFDF;
 }

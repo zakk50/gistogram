@@ -1,5 +1,13 @@
+html{
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background: linear-gradient(-45deg, #2A3753, #151B2B, #151B2B, #1E253F, #141A2A);
+
 }
