@@ -8,10 +8,11 @@
   border: 2px solid #334768;
   margin: 3px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .ColorPicker__swatch:hover {
   border: 2px solid grey;
-  /* transition: 0s; */
+  transition: 0.3s;
 }
 .ColorPicker__swatch.selected {
   border: 2px solid grey;
