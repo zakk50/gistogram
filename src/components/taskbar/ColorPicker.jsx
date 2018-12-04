@@ -9,7 +9,7 @@ const COLORS = ['#FFFFFF', '#80D8FF', '#FF8A80', '#5FC681', '#FFD15B', '#885FFF'
 const ColorPicker =  createReactClass ({
   render() {
     return(
-      <div className='ColorPicker'>
+      <div className='ColorPicker object_color'>
         {
           COLORS.map(color =>
             <div

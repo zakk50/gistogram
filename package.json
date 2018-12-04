@@ -6,13 +6,11 @@
     "electron": "^1.7.9",
     "electron-builder": "^20.28.4",
     "foreman": "^2.0.0",
-    "less-loader": "^4.1.0",
     "react-scripts": "0.8.5"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "create-react-class": "^15.6.3",
-    "less": "^3.8.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1"
   },

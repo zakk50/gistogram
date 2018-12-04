@@ -1,4 +1,64 @@
-.NoteEditor__footer{
-  
+.sidebar{
+  color: #F0F8FD;
+  font-size: 16px;
 }
-.ColorPicker{}
+.group{
+  position: relative;
+}
+.element{
+  width: 332.5px;
+  min-height: 45px;
+  background: #6786EE;
+  margin-left: 28px;
+  text-align: left;
+}
+.element h3{
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.element h4{
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+.button-create{
+  width: 328.5px;
+  height: 45px; 
+  border: 2px solid #6F7E95;
+  margin-left: 28px;
+  margin-top: 25px;
+  position: relative;
+}
+.button-create:hover{
+  cursor: pointer;
+}
+.plus_s{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  color: #fff;
+  line-height: 32px;
+  speak: none;
+  font-weight: bold;
+  cursor: pointer; 
+}
+.plus_ss{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 6px;
+  left: 149px;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  color: #fff;
+  line-height: 32px;
+  /* text-align: center; */
+  speak: none;
+  font-weight: bold;
+  cursor: pointer;
+}

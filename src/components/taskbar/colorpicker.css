@@ -17,3 +17,6 @@
 .ColorPicker__swatch.selected {
   border: 2px solid grey;
 }
+.object_color{
+  /* position: relative; */
+}

@@ -1,21 +1,18 @@
 .content{
-  position:relative;
+  /* position:relative; */
 }
 .content-sidebar{
-  position: absolute;
+  float:left;
   width: 389px;
   height: 760px;
-  left: 60px;
-  top: 0px;
+  margin-left: 60px;
   border-radius: 7px;
   background: linear-gradient( to bottom , #334768, #415372);
 }
 .content-histogram{
-  position: absolute;
+  float:left;
   width: 1470px;
   height: 760px;
-  right: 0px;
-  top: 0px;
   border-radius: 7px;
   background: #DFDFDF;
 }

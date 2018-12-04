@@ -4,3 +4,24 @@
   padding: 20px;
   color: white;
 }
+.button{
+  width: 160px;
+  height: 28px;
+  background: #0C6499;
+  color: #E4F1F7;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 40px;
+  outline: none;
+}
+.button:hover{
+  cursor: pointer;
+}
+.button-left{
+  float:left
+}
+.button-right{
+  float: right;
+}

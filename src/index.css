@@ -1,13 +1,25 @@
 html{
   height: 100%;
+  overflow:  hidden;
+  font-family: Roboto;
+}
+@font-face{
+  font-family: 'Roboto';
+  src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+
   width: 100%;
   height: auto;
   min-height: 100%;
   background: linear-gradient(-45deg, #2A3753, #151B2B, #151B2B, #1E253F, #141A2A);
-
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }

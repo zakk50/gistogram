@@ -14,7 +14,7 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1000,
     height: 625,
-    //fullscreen:true,
+    fullscreen:true,
     // frame:true,
     // resizable:false
     }); //основная конфигуация

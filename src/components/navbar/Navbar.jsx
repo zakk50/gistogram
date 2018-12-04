@@ -6,8 +6,9 @@ class Navbar extends Component {
     return (
       <div>
         <div className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h2>Gistogram</h2>
+          <button className="button button-left">button_1</button>
+          <button className="button button-left">button_2</button>
+          <button className="button button-right">скачать в PDF</button>
         </div>
       </div>
     )
