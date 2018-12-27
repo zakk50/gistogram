@@ -43,10 +43,19 @@ const Sidebar = createReactClass({
         <div>
           <h2>ДОБАВИТЬ ГРУППУ</h2>
         </div>
-
-        <div className="group">
-          <span className="plus_s" >+</span>
-        </div>
+        <ul>
+          <li>
+            <div className="group-add">Группа 1</div>
+          </li>
+          <li>
+            <div className="group-add">Группа 2 sdf sdf sdf SFD </div>
+          </li>
+          <li>
+            <div >
+              <span className="plus_" >+</span>
+            </div>
+          </li>
+        </ul>
 
         <div>
           <h2>ДОБАВИТЬ ЭЛЕМЕНТ</h2>

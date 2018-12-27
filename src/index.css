@@ -1,20 +1,30 @@
-html{
-  height: 100%;
-  overflow:  hidden;
-  font-family: Roboto;
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
 }
 @font-face{
   font-family: 'Roboto';
   src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
 }
+html{
+  height: 100%;
+  overflow:  hidden;
+  font-family: Roboto;
+}
 body {
-  margin: 0;
-  padding: 0;
-
+  /* margin: 0;
+  padding: 0; */
   width: 100%;
   height: auto;
   min-height: 100%;
-  background: linear-gradient(-45deg, #2A3753, #151B2B, #151B2B, #1E253F, #141A2A);
+  background: #E9EDF2; /*#2A3753, #151B2B, #151B2B, #1E253F, #141A2A*/
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: Roboto;
+  font-weight: normal;
+  letter-spacing: 0.3px;
 }
 .clearfix:after {
   content: "";
@@ -22,4 +32,8 @@ body {
   height: 0;
   clear: both;
   visibility: hidden;
+}
+a{
+  text-decoration: none;
+  outline: none;
 }
