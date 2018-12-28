@@ -51,22 +51,52 @@ ul li {
   font-weight: bold;
   cursor: pointer; 
 }
-.element{
-  width: 332.5px;
-  min-height: 45px;
-  background: #6786EE;
-  margin-left: 28px;
-  text-align: left;
+.block-task{
+  margin: 0 auto;
+  width: 95%;
+  height: 68px;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }
-.element h3{
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
+.block{
+  display: block;
+  height: 100%;
+  float: left;
 }
-.element h4{
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
+.color-element{
+  width: 2%;
+  background: black;
+  border-radius: 6px 0 0 6px;
+}
+.task-number{
+  width: 10%;
+  /* background: #6F7E95; */
+}
+.task-number > p{
+  color: #6F7E95;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 16px;
+}
+.task-text{
+  display: block;
+  width: 81%;
+  height: 100%;
+  background: blueviolet;
+  padding: 5px 0;
+}
+.task-text-tema{
+
+}
+.task-tema-time{
+
+} 
+.task-delete{
+  width: 7%;
+  background: red;
+  border-radius: 0 6px 6px 0;
 }
 .button-create{
   width: 328.5px;

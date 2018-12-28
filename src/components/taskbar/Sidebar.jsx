@@ -51,7 +51,7 @@ const Sidebar = createReactClass({
             <div className="group-add">Группа 2 sdf sdf sdf SFD </div>
           </li>
           <li>
-            <div >
+            <div>
               <span className="plus_" >+</span>
             </div>
           </li>
@@ -67,11 +67,17 @@ const Sidebar = createReactClass({
             onChange={this.handleColorChange}
           />
         </div>
-        <div className="element">
-          <div className="element-title"><h3>Тема или место</h3></div>
-          <div className="element-text"><h4>Текст циклограммы</h4></div>
-          <div className="element-time"><h3>20:00</h3> </div>
+
+        <div className="block-task">
+          <div className="block color-element"></div>
+          <div className="block task-number"><p>11</p></div>
+          <div className="block task-text clearfix">
+            <div className="task-test-tema"><p>Lakta</p></div>
+            <div className="task-text-time"><p>12:00</p></div>
+          </div>
+          <div className="block task-delete"></div>
         </div>
+
         <div className="button-create" >
           <span className="plus_ss" >+</span>
         </div>
