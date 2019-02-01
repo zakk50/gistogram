@@ -1,3 +1,32 @@
+::-webkit-scrollbar-button { 
+  /* background-image:url('');  */
+  background-repeat:no-repeat; 
+  width:6px; 
+  height:0px 
+}
+::-webkit-scrollbar-track { 
+  background-color:#ADBCCD;
+  border-radius: 5px;
+  box-shadow:0px 0px 3px #000 inset; 
+}
+::-webkit-scrollbar-thumb { 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px; 
+  background-color:rgb(128, 137, 148); 
+  /* box-shadow:0px 1px 1px #fff inset;  */
+  /* background-image:url('https://yraaa.ru/_pu/24/59610063.png');  */
+  background-position:center; 
+  background-repeat:no-repeat; 
+}
+::-webkit-resizer{ 
+  /* background-image:url('');  */
+  background-repeat:no-repeat; 
+  width:7px; 
+  height:0px 
+}
+::-webkit-scrollbar{ 
+  width: 11px; 
+}
 .sidebar{
   color: #F0F8FD;
   font-size: 16px;
@@ -21,7 +50,7 @@ ul li {
 /* .group{
   position: relative;
 } */
-.plus_{
+/* .plus_{
   position: absolute;
   width: 32px;
   height: 32px;
@@ -38,18 +67,23 @@ ul li {
   background: rgba(192, 188, 188, 0.5);
 }
 .plus_s{
-  /* position: absolute; */
   width: 32px;
   height: 32px;
-  /* top: 0; */
-  /* left: 0; */
   background: rgba(255, 255, 255, .5);
   border-radius: 50%;
   color: #fff;
   line-height: 32px;
-  speak: none;
   font-weight: bold;
   cursor: pointer; 
+} */
+input[type="text"]{
+
+}
+.prokrutka{
+  /* width: 200px; */
+  margin-top: 7px;
+  height: 620px;
+  overflow-y: auto;
 }
 .block-task{
   margin: 0 auto;
@@ -66,7 +100,7 @@ ul li {
 }
 .color-element{
   width: 2%;
-  background: black;
+  background: #FE9081;
   border-radius: 6px 0 0 6px;
 }
 .task-number{
@@ -77,22 +111,30 @@ ul li {
   color: #6F7E95;
   text-align: center;
   font-size: 28px;
-  font-weight: bold;
   padding-top: 16px;
 }
 .task-text{
   display: block;
   width: 81%;
   height: 100%;
-  background: blueviolet;
-  padding: 5px 0;
+  color: rgb(75, 74, 74);
+  /* font-weight: 800; */
+  font-size: 18px;
+  padding: 5px 3px;
 }
 .task-text-tema{
-
+  float: left;
+  width: 80%;
+  /* background: #6F7E95; */
 }
-.task-tema-time{
-
-} 
+.task-text-time{
+  float: left;
+  width: 20%; 
+}
+.task-text-text{
+  float: left;
+  width: 100%;
+}
 .task-delete{
   width: 7%;
   background: red;
@@ -112,7 +154,13 @@ ul li {
 .button-create:active{
   border: 2px solid rgb(87, 99, 117);
 }
-.plus_ss{
+.button-delete{
+  /* background: url('../../../public/del-button.png') no-repeat; */
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+/* .plus_ss{
   position: absolute;
   width: 32px;
   height: 32px;
@@ -122,11 +170,50 @@ ul li {
   border-radius: 50%;
   color: #fff;
   line-height: 32px;
-  /* text-align: center; */
   speak: none;
   font-weight: bold;
   cursor: pointer;
 }
 .plus_ss:active{
   background: rgba(192, 188, 188, .5);
+} */
+
+/*************/
+/*************/
+/**  ПРИМЕР **/
+/*************/
+/*************/
+.e1{
+  background: #5FC681;
 }
+.e2{
+  background: #885FFF;
+}
+.e3{
+  background: #FF4545;
+}
+.e4{
+  background: #16B2CB;
+}
+.e5{
+  background: #FFCB1F;
+}
+.e6{
+  background: #FE3263;
+}
+.e7{
+  background: #27CF45;
+}
+
+/* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+:focus{outline: none;}
+
+.col{float: left; width: 27.33%; margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+.effect-2{border: 0; padding: 7px 0; border-bottom: 1px solid #ccc;}
+
+.effect-2 ~ .focus-border{position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background-color: #4caf50; transition: 0.4s;}
+.effect-2:focus ~ .focus-border{width: 100%; transition: 0.4s; left: 0;}

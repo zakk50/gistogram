@@ -4,14 +4,19 @@
   margin: 0;
   transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
 }
-@font-face{
+/* @font-face{
   font-family: 'Roboto';
   src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
+} */
+@font-face{
+  font-family: 'Montserrat', sans-serif;
+  src: url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700);
 }
+
 html{
   height: 100%;
   overflow:  hidden;
-  font-family: Roboto;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   /* margin: 0;
@@ -22,7 +27,7 @@ body {
   background: #E9EDF2; /*#2A3753, #151B2B, #151B2B, #1E253F, #141A2A*/
 }
 h1, h2, h3, h4, h5, h6, p {
-  font-family: Roboto;
+  /* font-family: 'Montserrat', sans-serif; */
   font-weight: normal;
   letter-spacing: 0.3px;
 }
