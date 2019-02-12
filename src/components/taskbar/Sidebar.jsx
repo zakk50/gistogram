@@ -1,9 +1,11 @@
 import React from "react";
 import createReactClass from 'create-react-class';
-
-import ColorPicker from './ColorPicker.jsx';
+// import ColorPicker from './ColorPicker.jsx';
 
 import './sidebar.css';
+
+import { faEdit, faTrashAlt} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Sidebar = createReactClass({
   getInitialState() {
@@ -40,54 +42,40 @@ const Sidebar = createReactClass({
   render() {
     return(
       <div className="sidebar">
-      {/* !!! Добавление группы */}
-        {/* <div>
-          <h2>ДОБАВИТЬ ГРУППУ</h2>
-        </div>
-        <ul>
-          <li>
-            <div className="group-add">Группа 1</div>
-          </li>
-          <li>
-            <div className="group-add">Группа 2 sdf sdf sdf SFD </div>
-          </li>
-          <li>
-            <div>
-              <span className="plus_" >+</span>
-            </div>
-          </li>
-        </ul> */}
-        {/* !!! End Добавление группы */}
-
-        <div>
+        <div className="">
           <h2>ДОБАВИТЬ ЭЛЕМЕНТ</h2>
           <div className=""></div>
-          <input type="text"/>
-          <input type="text"/>
+          <input type="text" placeholder="Шапка ..."/>
+          <input type="text" placeholder="Текст ..."/>
           <input type="time"/>
-          {/* <div class="col">
-            <input className="effect-2" type="text" placeholder="Placeholder11 Text" />
-              <span className="focus-border"></span>
-          </div> */}
+          <input type="time"/>
+          <button className="button-add-sidebar button-color">ЦВЕТ</button>
+          <button className="button-add-sidebar button-sidebar">ДОБАВИТЬ</button>
         </div>
 
         <div className="NoteEditor__footer">
-          <ColorPicker
+          {/* <ColorPicker
             value={this.state.color}
             onChange={this.handleColorChange}
-          />
+          /> */}
         </div>
         <div className="prokrutka">
           <div className="block-task">
             <div className="block color-element"></div>
             <div className="block task-number"><p>8</p></div>
             <div className="block task-text clearfix">
-              <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-tema"><p>Обьект тема</p></div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete">
-              {/* <div className="button-delete"><img src="http://localhost:3000/public/del-button.png"></img></div> */}
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
             </div>
           </div>
 
@@ -97,76 +85,128 @@ const Sidebar = createReactClass({
             <div className="block task-number"><p>7</p></div>
             <div className="block task-text clearfix">
               <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete"></div>
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
+            </div>
           </div>
           <div className="block-task">
             <div className="block color-element e2"></div>
             <div className="block task-number"><p>6</p></div>
             <div className="block task-text clearfix">
               <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete"></div>
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
+            </div>
           </div>
           <div className="block-task">
             <div className="block color-element e3"></div>
             <div className="block task-number"><p>5</p></div>
             <div className="block task-text clearfix">
               <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete"></div>
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
+            </div>
           </div>
           <div className="block-task">
             <div className="block color-element e4"></div>
             <div className="block task-number"><p>4</p></div>
             <div className="block task-text clearfix">
               <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete"></div>
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
+            </div>
           </div>
           <div className="block-task">
             <div className="block color-element e5"></div>
             <div className="block task-number"><p>3</p></div>
             <div className="block task-text clearfix">
               <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete"></div>
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
+            </div>
           </div>
           <div className="block-task">
             <div className="block color-element e6"></div>
             <div className="block task-number"><p>2</p></div>
             <div className="block task-text clearfix">
               <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete"></div>
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
+            </div>
           </div>
           <div className="block-task">
             <div className="block color-element e7"></div>
             <div className="block task-number"><p>1</p></div>
             <div className="block task-text clearfix">
               <div className="task-text-tema"><p>Object</p></div>
-              <div className="task-text-time"><p>12:00</p></div>
-              <div className="task-text-text">Next next next next next</div>
+              <div className="task-text-time"><p>с 12:00</p></div>
+              <div className="task-text-time"><p>по 12:00</p></div>
+              <div className="task-text-text">Next next next next nextб  next next nextб .  next next next</div>
             </div>
-            <div className="block task-delete"></div>
+            <div className="block task-edit-delete">
+              <div className="task-edit">
+                <FontAwesomeIcon icon={faEdit} className="faEdit"/>
+              </div>
+              <div className="task-delete">
+                <FontAwesomeIcon icon={faTrashAlt} className="faTrashAl" /> 
+              </div>
+            </div>
           </div>
         </div>
-        {/* концовка для вида */}
-        {/* <div className="button-create" >
-          <span className="plus_ss" >+</span>
-        </div> */}
       </div>
     );
   }
