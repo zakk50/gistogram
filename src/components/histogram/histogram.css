@@ -84,7 +84,7 @@ h1 {
 .faCopyright{
   color: #6F7E95;
   transition: .4ms;
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 400;
 }
 .timeline-events h2,

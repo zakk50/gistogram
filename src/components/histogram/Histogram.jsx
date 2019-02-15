@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './histogram.css';
 
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+// import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { faCopyright} from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Histogram extends Component {
