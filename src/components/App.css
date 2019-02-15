@@ -1,6 +1,5 @@
 .App {
   width: 100%;
-  
   /* margin-left: 4%; */
 }
 .content-sidebar{
@@ -15,9 +14,12 @@
 .content-histogram{
   float:left;
   height: 830px;
-  border-radius: 7px;
-  background: #F3F6F9;
+  border-radius: 7px 0 0 7px;
+  background: #0f0f0f;
+  /* background-image: -webkit-linear-gradient(0deg, #0f0f0f 0%, #0f0f0f 49px, #6F7E95 50px); */
   box-shadow: 0 15px 108px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  overflow-x: auto;
+  /* background-size: cover; */
 }
 @media (max-width: 1920px){
   .App{

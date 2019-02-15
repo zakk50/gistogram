@@ -34,12 +34,12 @@
 ul{
   margin: 0;
   padding: 4px;
-  width: 389px;
+  /* width: 389px; */
   height: 40px;
 }
 ul li {
   display: inline;
-  float: left;
+  /* float: left; */
   list-style-type: none;
 }
 input{

@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
 } */
+.bod{
+  width: 600px;
+  height: 600px;
+}
 body {
   /* width: 100%; */
   height: 100%;
